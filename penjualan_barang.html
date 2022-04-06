@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout barang</title>
+    <link rel="stylesheet" href="penjualan_barang.css">
+</head>
+<body>
+<div class="container">
+    <table align="center" cellpadding="30" cellspacing="0">
+        <thead id="thead">
+            <th colspan="4">CHECKOUT BARANG</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Kode barang<br>
+            <input type="text" id="kodebarang" required>
+            </td>
+            <td>Nama barang<br>
+            <input type="text" id="namabarang" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Harga<br>
+            <input type="text" placeholder="Rp. -" id="harga" required> 
+            </td>
+            <td>Jumlah jual<br>
+            <input type="number" id="jumlahjual" placeholder="0" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Sub Total<br>
+            <input type="text" placeholder="Rp. -" id="subtotal" class="ST" readonly> 
+            </td>
+            <td>Diskon<br>
+            <input type="text" placeholder="%" id="diskon" class="D" readonly> 
+            </td>
+        </tr>
+        <tr>
+            <td>Nilai Diskon<br>
+            <input type="text"  placeholder="Rp. -" id="nilaidiskon" class="ND" readonly>
+            </td>
+            <td>Total bayar<br>
+            <input type="text"  placeholder="Rp. -" id="total" class="TT" readonly>
+            </td>
+        </tr>
+        <tr>
+        <div class="btn">
+            <td align="right" colspan="2" >
+                <button class="beli" id="btnbeli" onclick='bayar()'>Bayar</button>
+                <button type="reset" class="batal" id="btnbatal" onclick='document.location.reload()'>Batal</button>
+            </td>
+        </div>    
+        </tr>
+    </tbody>
+    </table>
+</div>
+    <script src="penjualan_barang.js"></script>
+</body>
+</html>
