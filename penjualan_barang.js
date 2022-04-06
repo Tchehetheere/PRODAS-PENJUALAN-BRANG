@@ -1,11 +1,4 @@
-let kodebarang = document.getElementById("kodebarang");
-let harga = document.getElementById("harga")
-let subTotal = document.getElementById("subtotal")
-let nilaiDiskon = document.getElementById('nilaidiskon')
-let namaBarang = document.getElementById('namabarang')
-let jumlahJual = document.getElementById('jumlahjual')
-let diskon = document.getElementById('diskon')
-let total = document.getElementById('total')
+//Validation input
 
 let validation= []
 
@@ -42,6 +35,8 @@ function bayar() {
         validation.pop()
     }
 }
+
+//Function to determine discount value
 
 function payment (){
     let harga = document.getElementById("harga").value;
